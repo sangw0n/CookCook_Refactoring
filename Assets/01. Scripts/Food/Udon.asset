@@ -18,19 +18,22 @@ MonoBehaviour:
   materials:
   - materialName: FishCake
     materialSprite: {fileID: 21300000, guid: 54542a74f6403ef4eb65ac2f29e474ed, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: SoySauce
     materialSprite: {fileID: 21300000, guid: db2246e25b578774fac6c3f9d4b969f4, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Noodles
     materialSprite: {fileID: 21300000, guid: 5f49fa5305211a44baee62fbab416383, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}

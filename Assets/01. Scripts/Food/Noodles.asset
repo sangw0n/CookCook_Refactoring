@@ -18,37 +18,43 @@ MonoBehaviour:
   materials:
   - materialName: Anchovy
     materialSprite: {fileID: 21300000, guid: b4eff55ab463599489307dd6f175c3f9, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Egg
     materialSprite: {fileID: 21300000, guid: 67703a85f9c1ed747a72c42fc7a6009c, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Noodles
     materialSprite: {fileID: 21300000, guid: 5f49fa5305211a44baee62fbab416383, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Pepper
     materialSprite: {fileID: 21300000, guid: 2b9f4bc70b40e834b99d85903d1bb058, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Pumpkin
     materialSprite: {fileID: 21300000, guid: ac0e70ff0992f52459505a91b37e653a, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Seaweed
     materialSprite: {fileID: 21300000, guid: 25baba1da72a3a34082d6934e2de74ea, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}

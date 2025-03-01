@@ -18,13 +18,15 @@ MonoBehaviour:
   materials:
   - materialName: kong
     materialSprite: {fileID: 21300000, guid: bf0e729c885489542894a48c5e23e3ad, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: ongsim
     materialSprite: {fileID: 21300000, guid: 956fae6b3e21ffe4ca3e572e48d93e95, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}

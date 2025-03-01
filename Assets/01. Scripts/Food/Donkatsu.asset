@@ -18,25 +18,29 @@ MonoBehaviour:
   materials:
   - materialName: Cabbage
     materialSprite: {fileID: 21300000, guid: 6149a9c6a53e9414cad836e875f95895, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Meat
     materialSprite: {fileID: 21300000, guid: 18272fa10ffaa724ba85b72b79910797, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Pul
     materialSprite: {fileID: 21300000, guid: 7465cecae80306f438efd27b1cfd7808, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Rice
     materialSprite: {fileID: 21300000, guid: d7b55f49e7f8700409bdff1dcc49dbbf, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}

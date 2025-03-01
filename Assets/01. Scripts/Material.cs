@@ -10,6 +10,7 @@ public class Material
 {
 	public string	materialName;
 	public Sprite   materialSprite;
+	public int		materialMaxCount;
 	public int		materialCount;
 
 	[Header("# Offset")]

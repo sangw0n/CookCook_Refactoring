@@ -18,43 +18,50 @@ MonoBehaviour:
   materials:
   - materialName: Bean
     materialSprite: {fileID: 21300000, guid: 25fcbf991ff203e4cb9d4d05c262bf15, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Carrot
     materialSprite: {fileID: 21300000, guid: b1f60f9f4d1f4b041a0a01d49d913f68, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Egg
     materialSprite: {fileID: 21300000, guid: fa9f3365f6b66ac4b908b7a996627e80, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Meat
     materialSprite: {fileID: 21300000, guid: 695efd8e4fb6a5f4bb4ff915f5e75ee9, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Mushroom
     materialSprite: {fileID: 21300000, guid: 7f4151fa5942df44095674a52d2ddaff, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: Pepper
     materialSprite: {fileID: 21300000, guid: 856d7af2deb7b444fbc9539a1cc4e956, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}
   - materialName: rice
     materialSprite: {fileID: 21300000, guid: 6a7763062ff3b39408276bdaa454b5c5, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
-    scaleOffset: {x: 0, y: 0, z: 0}
+    scale: {x: 0, y: 0, z: 0}

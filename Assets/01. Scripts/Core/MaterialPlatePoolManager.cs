@@ -16,10 +16,11 @@ public class MaterialPlatePoolManager : Singleton<MaterialPlatePoolManager>
 
 	private Queue<GameObject>	platePool;
 
-	private void Start()
+	public override void Awake()
 	{
-		platePool = new Queue<GameObject>();
+		base.Awake();
 
+		platePool = new Queue<GameObject>();
 		for (int count = 0 ; count < generationCount; count++)
 		{
 			platePool.Enqueue(CreateMaterialPlate());

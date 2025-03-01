@@ -18,37 +18,43 @@ MonoBehaviour:
   materials:
   - materialName: Ball
     materialSprite: {fileID: 21300000, guid: e5a70ed3fef464e4d9ad069a16e846ce, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Chill
     materialSprite: {fileID: 21300000, guid: c15cf7e7c7f2a064b9b6dece4027dff6, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Gamza
     materialSprite: {fileID: 21300000, guid: d0e262647459d45438ee6dbb93cbcef9, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Meat
     materialSprite: {fileID: 21300000, guid: dc5931c42137c3845b3348a3cb104562, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Meshroom
     materialSprite: {fileID: 21300000, guid: c6f885b66ee04e446bd43322126961e4, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Onion
     materialSprite: {fileID: 21300000, guid: 03a10abf9fd56064e8525346e7a4869f, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}

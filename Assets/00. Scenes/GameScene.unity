@@ -387,7 +387,7 @@ MonoBehaviour:
   plateLeftSpawnPoint: {fileID: 447348575}
   plateRightSpawnPoint: {fileID: 1709230902}
   plateMovementSpeed: 10
-  spawnTime: 2
+  spawnTime: 1
 --- !u!4 &511257225
 Transform:
   m_ObjectHideFlags: 0
@@ -687,6 +687,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 09a1d88aa81a93c44abe29d7199706f0, type: 2}
   - {fileID: 11400000, guid: 834af8d4e95c10147a18b3968ef5cccd, type: 2}
   - {fileID: 11400000, guid: 7334efb4d7c9db249845a5f2e6c4e005, type: 2}
+  requiredMaterialEffect: {fileID: 5357238618772395454, guid: 510031327949bf04dba3c6edf481f486, type: 3}
+  successEffect: {fileID: 5972197903401388921, guid: 6de925307cdd61f439f1a7a7164a0b1a, type: 3}
+  failEffect: {fileID: 1177746191979204170, guid: 2835279ac43ef8d44b9e34508ad3fc2c, type: 3}
 --- !u!1 &1274670245
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platePrefab: {fileID: 3441638253812273310, guid: dac110db17b9ccf4fa413cff115baec4, type: 3}
   plateParent: {fileID: 1933272989}
-  generationCount: 30
+  generationCount: 15
 --- !u!4 &1274670247
 Transform:
   m_ObjectHideFlags: 0
@@ -746,8 +749,9 @@ GameObject:
   - component: {fileID: 1509429263}
   - component: {fileID: 1509429265}
   - component: {fileID: 1509429266}
+  - component: {fileID: 1509429267}
   m_Layer: 0
-  m_Name: Main_Plate
+  m_Name: Food_Plate
   m_TagString: MainPlate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -844,7 +848,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.82, y: 4.85}
+  m_Size: {x: 3.06, y: 4.32}
   m_EdgeRadius: 0
 --- !u!50 &1509429266
 Rigidbody2D:
@@ -867,6 +871,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1509429267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509429262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a9313472887b044a7b9b8f36f21bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAlpha: 0.223
 --- !u!1 &1709230901
 GameObject:
   m_ObjectHideFlags: 0

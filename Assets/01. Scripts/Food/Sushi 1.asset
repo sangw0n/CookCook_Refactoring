@@ -18,13 +18,15 @@ MonoBehaviour:
   materials:
   - materialName: Rice
     materialSprite: {fileID: 21300000, guid: a0ed2da7f7498914995ca5ef437cdc76, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
   - materialName: Shrimp
     materialSprite: {fileID: 21300000, guid: c091dc4e95f7b994293929314115c253, type: 3}
-    materialCount: 2
+    materialMaxCount: 2
+    materialCount: 0
     positionOffset: {x: 0, y: 0, z: 0}
     rotationOffset: {x: 0, y: 0, z: 0}
     scale: {x: 0, y: 0, z: 0}
