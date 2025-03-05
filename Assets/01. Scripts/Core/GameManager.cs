@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
+	[SerializeField]
+	private FoodPlate   foodPlate;
+
 	[Header("# Food ScriptableObject")]
 	[SerializeField]
 	private FoodSO[]	foodScriptableObjects;
@@ -77,7 +80,7 @@ public class GameManager : Singleton<GameManager>
 	}
 
 	/// <summary>
-	/// 현재 음식 재료 중 랜덤으로 재료를 반홥합니다
+	/// 현재 음식 재료 중 랜덤으로 재료를 반환합니다
 	/// </summary>
 	public Material GetRandomMaterial()
 	{
@@ -86,7 +89,7 @@ public class GameManager : Singleton<GameManager>
 	}
 
 	/// <summary>
-	/// 현재 음식에 필요한 재료 데이터를 반홥합니다
+	/// 현재 음식에 필요한 재료 데이터를 반환합니다
 	/// </summary>
 	public Material GetCurrentMaterial()
 	{
@@ -94,11 +97,71 @@ public class GameManager : Singleton<GameManager>
 	}
 
 	/// <summary>
-	/// 현재 음식에 필요한 재료의 이름을 반홥합니다
+	/// 현재 음식에 필요한 재료의 이름을 반환합니다
 	/// </summary>
 	public string GetCurrentMaterialName()
 	{
 		return foods[currentFoodIndex].materials[currentMaterialIndex].materialName;
+	}
+
+	/// <summary>
+	/// 현재 요리에 필요한 총 재료 개수를 반환합니다
+	/// </summary>
+	public int GetCurrentFoodTotalMaterialCount()
+	{
+		int  result		 = 0;
+		Food currentFood = foods[currentFoodIndex];
+
+		for(int i = 0 ; i < currentFood.materials.Length; i++)
+		{
+			result += currentFood.materials[i].materialCount;
+		}
+
+		return result;
+	}
+
+	/// <summary>
+	/// 현재 음식에 필요한 재료를 얻으면 감소시킨다
+	/// </summary>
+	public void ReduceMaterialCount()
+	{
+		Food	 currentFood     = foods[currentFoodIndex];
+		Material currentMaterial = currentFood.materials[currentMaterialIndex];
+
+		// 재료 감소 
+		currentMaterial.materialCount--;
+
+		// 현재 얻어야 할 재료가 "0"일 때
+		if(currentMaterial.materialCount <= 0)
+		{
+			// 더 이상 얻어야 할 재료가 없다면
+			if (currentMaterialIndex == currentFood.materials.Length - 1)
+			{
+				MoveNextFood();
+				return;
+			}
+
+			currentMaterialIndex++;
+		}
+	}
+
+	/// <summary>
+	/// 다음 요리로 이동한다
+	/// </summary>
+	public void MoveNextFood()
+	{
+		MaterialPlatePoolManager.Instance.ReturnAllPlate();
+
+		if(currentFoodIndex == foods.Length - 1)
+		{
+			// 스테이지 클리어
+			return;
+		}
+
+		currentFoodIndex++;
+		currentMaterialIndex = 0;
+
+		foodPlate.Initilalize();
 	}
 
 	#region 이펙트 소환 관련 함수

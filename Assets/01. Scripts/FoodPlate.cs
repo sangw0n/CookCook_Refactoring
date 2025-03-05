@@ -14,6 +14,9 @@ public class FoodPlate : MonoBehaviour
 	private int			   foodCompleteness;
 	private float		   cookingTimeLimit;
 
+	private int			   maxMaterialCount;
+	private int			   collectedMaterialCount;
+
 	private SpriteRenderer spriteRenderer;
 
 	private void Awake()
@@ -38,21 +41,29 @@ public class FoodPlate : MonoBehaviour
 		Food currentFood = GameManager.Instance.GetCurrentFood();
 
 		// 현재 음식에 맞게 Sprite 설정
-		spriteRenderer.sprite = currentFood.foodSprite;
+		spriteRenderer.sprite  = currentFood.foodSprite;
+		foodName               = currentFood.foodName;
+		foodCompleteness	   = Constants.MaxFoodCompleteness;
+		cookingTimeLimit	   = currentFood.cookingTimeLimit;
 
-		foodName              = currentFood.foodName;
-		foodCompleteness	  = Constants.MaxFoodCompleteness;
-		cookingTimeLimit	  = currentFood.cookingTimeLimit;
+		maxMaterialCount	   = GameManager.Instance.GetCurrentFoodTotalMaterialCount();
+		collectedMaterialCount = 0;
+
+		UpdateAlpha();
+	}
+
+	public void AddMaterialCount()
+	{
+		collectedMaterialCount++;
 	}
 
 	public void UpdateAlpha()
 	{
-		int maxCount	   = GameManager.Instance.GetCurrentMaterial().materialMaxCount;
-		int remainingCount = GameManager.Instance.GetCurrentMaterial().materialCount;
+		float t     = (float)collectedMaterialCount / maxMaterialCount;
+		float alpha = Mathf.Lerp(startAlpha, 1f, t);
 
-		float alpha = Mathf.Lerp(startAlpha, 1f, 1f - (float)remainingCount / maxCount);
-		Color color = spriteRenderer.color;
-		color.a = alpha;
+		Color color          = spriteRenderer.color;
+		color.a              = alpha;
 		spriteRenderer.color = color;
 	}
 }

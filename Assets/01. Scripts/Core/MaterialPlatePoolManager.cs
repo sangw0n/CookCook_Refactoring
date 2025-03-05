@@ -8,6 +8,8 @@ using UnityEngine;
 public class MaterialPlatePoolManager : Singleton<MaterialPlatePoolManager>
 {
 	[SerializeField]
+	private List<GameObject>    plateList;
+	[SerializeField]
 	private GameObject			platePrefab;
 	[SerializeField]
 	private Transform			plateParent;
@@ -20,7 +22,9 @@ public class MaterialPlatePoolManager : Singleton<MaterialPlatePoolManager>
 	{
 		base.Awake();
 
+		plateList = new List<GameObject>();
 		platePool = new Queue<GameObject>();
+
 		for (int count = 0 ; count < generationCount; count++)
 		{
 			platePool.Enqueue(CreateMaterialPlate());
@@ -31,6 +35,8 @@ public class MaterialPlatePoolManager : Singleton<MaterialPlatePoolManager>
 	{
 		GameObject clone = Instantiate(platePrefab, plateParent);
 		clone.SetActive(false);
+		plateList.Add(clone);
+
 		return clone;
 	}
 
@@ -59,5 +65,13 @@ public class MaterialPlatePoolManager : Singleton<MaterialPlatePoolManager>
 		obj.SetActive(false);
 		obj.transform.SetParent(plateParent);
 		platePool.Enqueue(obj);
+	}
+
+	public void ReturnAllPlate()
+	{
+		for(int i = 0; i < plateList.Count; i++)
+		{
+			ReturnMaterialPlate(plateList[i]);
+		}
 	}
 }
